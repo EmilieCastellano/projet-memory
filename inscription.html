@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Formulaire Inscription</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="inscription.html">Inscription</a>
+            <a href="connexion.html">Connexion</a>
+            <a href="compte.html">Profil</a>
+            <a href="play.html">Jouer</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="formulaire">
+
+            <h2>Formulaire d'inscription</h2>
+            
+            
+                <section class="sectionForm">
+                    <fieldset>
+                        <legend>Formulaire</legend>
+            
+                        <form id = "myForm" action="" method="GET">
+                            <div>
+                                <label for="nom">Nom * : </label>
+                                <input type="text" 
+                                name="nom" 
+                                id="nom"  
+                                required 
+                                autofocus
+                                title="Renseigner votre nom">
+                            </div>
+                            <div id="nomErreur"></div>
+                            <div>
+                                <label for="prenom">Prénom * : </label>
+                                <input 
+                                type="text" 
+                                name="prenom" 
+                                id="prenom" 
+                                required>
+                            </div>
+                            <div id="prenomErreur"></div>
+                            <div>
+                                <label for="email">Email * : </label>
+                                <input 
+                                type="email" 
+                                name="email" 
+                                id="email" >
+                            </div>
+                            <div id="emailErreur"></div>
+                            <div>
+                                <label for="mdp">Mot de passe * : </label>
+                                <input 
+                                type="password" 
+                                name="mdp" 
+                                id="mdp" 
+                                required>
+                                <div id="barre">
+                                <progress id="progress" value="0" max="100"></progress>
+                                <span id="progressLabel"></span>
+                                </div>
+                                <div id="mdpErreur"></div>
+                            </div><br>
+                            <div class="btnForm">
+                                <input 
+                                type="submit" 
+                                value="Valider" 
+                                id="btn">
+                            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+<script type="module" src="./js/mainFormulaire.js"></script> 
+</body>
+</html>
