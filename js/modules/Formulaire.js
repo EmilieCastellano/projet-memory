@@ -33,3 +33,30 @@ export function clearErreur() {
    erreurElements.forEach(element => element.innerText = '' );
 }
 
+export function messageErrorLogin(fieldId, message) {
+  const errorElement = document.createElement("span");
+  errorElement.style.color = "red";
+  errorElement.innerText = message;
+
+  const fieldElement = document.getElementById(fieldId);
+  if (fieldElement) {
+    fieldElement.parentNode.appendChild(errorElement);
+  }
+}
+//////      local storage       //////
+
+export function storageNew(user) {
+  let users = JSON.parse(localStorage.getItem("formData"));
+
+  if (!Array.isArray(users)) {
+    users = [];
+  }
+
+  users.push(user);
+  localStorage.setItem("formData", JSON.stringify(users));
+  console.log("Utilisateur ajouté :", user);
+}
+
+/////       CONNEXION       /////////
+
+

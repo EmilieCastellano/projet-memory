@@ -1,0 +1,72 @@
+.plateau {
+  max-width: 660px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.carte {
+  position: relative;
+  transition: all 0.6s linear;
+  transform-style: preserve-3d;
+  margin: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carte,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background: url("../img/question.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.select {
+  transform: rotateY(180deg);
+}
+
+.match .front {
+  background-image: none !important;
+}
+
+.carte.match {
+  /* Garder les cartes visibles */
+  opacity: 1;
+
+  /* Empêcher de nouveaux clics sur les cartes déjà matchées */
+  pointer-events: none;
+}
+
+.carte.match .front,
+.carte.match .back {
+  /* Assurer que le côté back de la carte reste visible */
+  transform: rotateY(0deg);
+}
+
+#bravo {
+  text-align: center;
+  color: hotpink;
+}

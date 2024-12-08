@@ -1,0 +1,68 @@
+fieldset {
+  border-radius: 7px;
+  border: 1px solid rgb(158, 116, 158);
+}
+
+input,
+label {
+  margin: 1em;
+  padding: 1em;
+}
+
+input {
+  height: 30px;
+  width: 400px;
+  border-radius: 7px;
+  border: 1px solid rgb(158, 116, 158);
+  padding-left: 5px;
+  color:  black;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  color: rgb(235, 218, 235);
+}
+
+legend {
+  color: rgb(240, 216, 240);
+}
+
+#btn:hover {
+  background-color: rgb(197, 238, 175);
+  color: rgb(60, 94, 10);
+  cursor: pointer;
+}
+
+
+#btn {
+  text-align: center;
+  padding: 5px 20px;
+  height: 40px;
+  width: 180px;
+  margin-left: 30em;
+}
+
+#nomErreur, #prenomErreur, #emailErreur, #mdpErreur{
+  color: red;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#progress {
+  width: 300px;
+  height: 20px;
+  margin-left: 18em;
+  background-color: greenyellow;
+}
+
+#loginForm span{
+  color: red;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#login{
+  text-align: center;
+  color: hotpink;
+}

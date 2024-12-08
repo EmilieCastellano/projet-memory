@@ -31,7 +31,7 @@ let gameCartes = [
     img: "./img/choix/singe.webp",
   },
 ];
-// console.log(gameCartes);
+
 
 // Creation plateau Jeu
 const game = document.getElementById("tabJeu");
@@ -131,4 +131,4 @@ document.addEventListener("keypress", (e) => {
   }
 });
 
-//////////////////////  FORMULAIRE    //////////////////
+
